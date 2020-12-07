@@ -1,0 +1,109 @@
+﻿@page
+@model MusicListApp.Pages.TrackList.IndexModel
+@{
+    ViewData["Title"] = "Track List";
+}
+<div class="text-center">
+    <h1 class="display-4">List of the available tracks</h1>
+</div>
+<br />
+<div class="container row p-0 m-0">
+    <div class="col-9">
+        <h2 class="text-info">Track List</h2>
+    </div>
+    <div class="col-3">
+        <a asp-page="AddTrack" class="btn btn-info form-control text-white ">Add New Track</a>
+    </div>
+
+    <div class="col-12 border p-3 m-3">
+        <form method="post">
+            <input asp-for="singer" placeholder="singer" />
+            <input asp-for="composer" placeholder="composer" disabled="true"/>
+            <input asp-for="lyricist" placeholder="lyricist"disabled="true"/>
+            <input asp-for="year" placeholder="year"disabled="true"/>
+            <button asp-page-handler="filter">Filter</button>
+            @if (Model.Tracks.Count() > 0)
+            {
+                <table class="table table-striped border">
+                    <tr class="table-secondary">
+                        <th>
+                            <label asp-for="Tracks.FirstOrDefault().Name"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Tracks.FirstOrDefault().Composers"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Tracks.FirstOrDefault().Singers"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Tracks.FirstOrDefault().Lyricists"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Tracks.FirstOrDefault().Year"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Tracks.FirstOrDefault().Plays"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Tracks.FirstOrDefault().Likes"></label>
+                        </th>
+                        <th>
+                            <label>Actions</label>
+                        </th>
+                    </tr>
+                    @foreach (var track in Model.Tracks)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(x => track.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(x => track.Composers)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(x => track.Singers)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(x => track.Lyricists)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(x => track.Year)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(x => track.Plays)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(x => track.Likes)
+                            </td>
+                            <td>
+                                <button asp-page-handler="Like" asp-route-id="@track.ID" class="btn btn-sm">
+                                    <img src="~/like.png" style="width:30%;height:30%" />
+                                </button>
+                                <button asp-page-handler="Delete" asp-route-id="@track.ID"
+                                        onclick="return confirm('Are you sure you want to Delete the track?')" class="btn btn-danger btn-sm">
+                                    Delete
+                                </button>
+                                <a asp-page="EditTrack" asp-route-id="@track.ID" class="btn btn-success btn-sm text-white">Edit</a>
+                            </td>
+                        </tr>
+
+                    }
+                </table>
+
+
+            }
+            else
+            {
+                <p>Sorry. No Tracks Available.</p>
+            }
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+@{
+}
