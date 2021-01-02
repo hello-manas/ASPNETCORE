@@ -1,0 +1,10 @@
+Created an ASP.NET WEB Application with Empty Template
+
+See the flow -
+
+LearningASPNETCORE.Startup: Information: ---->MW1--->
+LearningASPNETCORE.Startup: Information: ---->MW2--->
+LearningASPNETCORE.Startup: Information: ---->MW3--->
+LearningASPNETCORE.Startup: Information: <----MW3<----
+LearningASPNETCORE.Startup: Information: <----MW2<----
+LearningASPNETCORE.Startup: Information: <----MW1<----

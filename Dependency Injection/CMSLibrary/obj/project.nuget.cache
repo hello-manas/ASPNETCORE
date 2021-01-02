@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "dJ7dKFozb6fdLhMlM0a9iNlHw7k1RmdJYU27oaf8hsPowlS4Wk84XWJ2xycQIID/dFpZM098lNR8CALnMpCORw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\manas\\source\\ChalantuSikhiba\\OOPSConcept\\CMSLibrary\\CMSLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

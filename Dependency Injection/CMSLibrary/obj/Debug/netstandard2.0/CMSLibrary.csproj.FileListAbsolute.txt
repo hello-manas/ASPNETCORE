@@ -1,0 +1,9 @@
+C:\Users\manas\source\ChalantuSikhiba\OOPSConcept\CMSLibrary\bin\Debug\netstandard2.0\CMSLibrary.deps.json
+C:\Users\manas\source\ChalantuSikhiba\OOPSConcept\CMSLibrary\bin\Debug\netstandard2.0\CMSLibrary.dll
+C:\Users\manas\source\ChalantuSikhiba\OOPSConcept\CMSLibrary\bin\Debug\netstandard2.0\CMSLibrary.pdb
+C:\Users\manas\source\ChalantuSikhiba\OOPSConcept\CMSLibrary\obj\Debug\netstandard2.0\CMSLibrary.csprojAssemblyReference.cache
+C:\Users\manas\source\ChalantuSikhiba\OOPSConcept\CMSLibrary\obj\Debug\netstandard2.0\CMSLibrary.AssemblyInfoInputs.cache
+C:\Users\manas\source\ChalantuSikhiba\OOPSConcept\CMSLibrary\obj\Debug\netstandard2.0\CMSLibrary.AssemblyInfo.cs
+C:\Users\manas\source\ChalantuSikhiba\OOPSConcept\CMSLibrary\obj\Debug\netstandard2.0\CMSLibrary.csproj.CoreCompileInputs.cache
+C:\Users\manas\source\ChalantuSikhiba\OOPSConcept\CMSLibrary\obj\Debug\netstandard2.0\CMSLibrary.dll
+C:\Users\manas\source\ChalantuSikhiba\OOPSConcept\CMSLibrary\obj\Debug\netstandard2.0\CMSLibrary.pdb
